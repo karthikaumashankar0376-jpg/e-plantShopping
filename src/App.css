@@ -6,11 +6,32 @@
   overflow: hidden;
 }
 
-.landing-page {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #f8f8f8;
+/* Styling for the Paradise Nursery Landing Page */
+.landing_page {
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/08/11/36/garden-4829910_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Darken the background slightly to make text more readable */
+.landing_page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
 .background-image {
